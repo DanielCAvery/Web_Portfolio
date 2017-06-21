@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!--SEO Stuff. 
+		All urls of all pages can only be <= 90 characters;
+		Title <= 70 characters WITH SPACES!!; 
+		Meta Description <= 160 characters WITH SPACES!!-->
+		<meta charset="utf-8">
+		<title>Daniel C. Avery / Designer & Developer</title>
+		<meta name="description" content="Portfolio of a junior-level web designer, developer, marketer and videographer located in Utah."/>
+		
+		<!--favicon-->
+		<link rel='shortcut icon' href='favicon.ico' type='image/x-icon'/ >
+
+		<!--CSS linking and fonts-->
+		<link href="css/normalize.css" rel="stylesheet"/>
+		<link href='https://fonts.googleapis.com/css?family=Raleway:400,800' rel="stylesheet" type="text/css">
+		<link href="css/main.css" rel="stylesheet"/>
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+	<body>
+		<!--This wrapper is only to make the footer "sticky".-->
+		<div id="footersticker">
+			<header>
+				<a href="#" id="logo">
+					<h1>Daniel C. Avery / Designer & Developer</h1>
+				</a>
+				<nav>
+					<ul>
+						<li><a href="index.html" class="selected">Portfolio</a></li>
+						<li><a href="about.html">About</a></li>
+						<li><a href="contact.html">Contact</a></li>
+					</ul>
+				</nav>
+			</header>
+			<div id="wrapper">
+				<!--Gallery.
+				Images scaled to EXACTLY 266px x 299px in GIMP  
+				(formerly 550 x 617, starting with a 1024px x 768px document)-->	
+				<ul id="gallery">
+					<li>
+						<a href="subpages/htmlcss.html">
+							<img src="img/design.jpg" alt="">
+							<h6>HTML & CSS</h6>
+						</a>
+					</li>
+					<!-- <li>
+						<a href="#">
+							<img src="img/sass.jpg" alt="">
+							<h6>Sass(, Compass?) & SCSS</h6>
+						</a>
+					</li> -->
+					<li>
+						<a href="subpages/udemy/bootstrap/bootstrap.html">
+							<img src="img/bootstrap.jpg" alt="">
+							<h6>Bootstrap</h6>
+						</a>
+					</li>
+					<li>
+						<a href="subpages/udemy/semantic/semantic.html">
+							<img src="img/semantic.jpg" alt="">
+							<h6>Semantic UI</h6>
+						</a>
+					</li>
+					<li>
+						<a href="subpages/design.html">
+							<img src="img/computer.jpg" alt="">
+							<h6>Design Portfolio</h6>
+						</a>
+					</li>
+					<li>
+						<a href="subpages/uxdesign.html">
+							<img src="img/access.jpg" alt="">
+							<h6>UX Design</h6>
+						</a>
+					</li>
+					<li>
+						<a href="subpage_js/jquery.html">
+							<img src="img/jquery.jpg" alt="">
+							<h6>jQuery</h6>
+						</a>
+					</li>
+					<li>
+						<a href="subpage_js/javascript.html">
+							<img src="img/javascript.jpg" alt="">
+							<h6>JavaScript & AJAX</h6>
+						</a>
+					</li>
+					<li>
+						<a href="backend/node.html">
+							<img src="img/yelpcamp.jpg" alt="">
+							<h6>Angular, Node & MEAN Stack</h6>
+						</a>
+					</li>
+					<li>
+						<a class="inactive" href="#">
+							<img src="img/comingsoon.jpg" alt="">
+							<h6>PHP & WordPress</h6>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<footer>
+			<p id="copyright">&copy; Daniel C. Avery: 2008, 2013, 2015, 2016.</p>
+		</footer>
+	<!--This imports the JavaScript, when any is added.
+	<script src="js/main.js"></script-->
+	</body>
+</html>

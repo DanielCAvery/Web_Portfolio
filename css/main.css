@@ -1,0 +1,392 @@
+/********************
+GENERAL
+********************/
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Raleway; }
+
+#footersticker {
+  min-height: calc(100vh - 38.7969px);
+}
+
+#wrapper {
+  max-width: 940px;
+  margin: 0 auto;
+  padding: 0 5%;
+  padding-top: 6.5em;
+}
+
+a {
+  text-decoration: none; }
+
+img {
+  max-width: 100%; }
+
+section {
+  margin-top: 60px;
+}
+
+/********************
+HEADER
+********************/
+header {
+  float: left;
+  margin: 0 0 30px 0;
+  padding: 5px 0 0 0;
+  width: 100%; 
+  position: fixed;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, .3);
+  box-shadow: 
+  z-index: 1000; /* Overkill, but now we can position anything on the page, and the nav always covers it */
+}
+
+#logo {
+  margin: 0; }
+
+h1 {
+  margin-left: 1.66%;
+  font-size: 23px;
+  font-weight: 800;
+  text-transform: uppercase;
+  width: 97%; /*50%;*/
+  padding-bottom: 20px;
+  border-bottom: 2px solid #eee;
+}
+
+.body-title {
+  text-align: center; }
+
+/********************
+NAVIGATION
+********************/
+nav {
+  text-align: center;
+  text-transform: uppercase;
+  padding: 10px 0;
+  margin: 20px 0 0; }
+
+nav ul {
+  list-style: none;
+  margin: 0 10px;
+  padding: 0; }
+
+nav li {
+  display: inline-block; }
+
+nav a {
+  font-weight: 800;
+  padding: 15px 10px; }
+
+/********************
+FOOTER
+********************/
+footer {
+  font-size: 0.80em;
+  text-transform: uppercase;
+  text-align: center;
+  clear: both;
+  padding-top: 1px;
+  padding-bottom: 10px; 
+}
+
+#copyright {
+  margin-bottom: 0;
+}
+
+/********************
+PAGE: PORTFOLIO
+********************/
+
+#gallery,
+#subgallery {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+#gallery,
+#topmargin {
+  margin-top: 65px;
+}
+
+#gallery li,
+#subgallery li {
+  float: left;
+  width: 45%;
+  margin: 2.5%; }
+
+#gallery li a h6,
+#subgallery li a h6,
+#gallery li a p,
+#subgallery li a p  {
+  margin: 0;
+  padding: 5%;
+  font-size: 0.85em; }
+
+#gallery li a h6,
+#subgallery li a h6 {
+  font-weight: bold; }
+
+/********************
+PAGE: ABOUT / CONTACT
+********************/
+.profile-photo {
+  display: block;
+  max-width: 150px;
+  margin: auto;
+  margin-bottom: 2%;
+  padding: 4.5%;
+  border-radius: 25%;
+  /*Changing the picture edge*/ }
+
+#wrapper h3,
+#wrapper p {
+  margin: 0 0 4%;
+  padding-top: 0; }
+
+#wrapper h3 {
+  text-transform: uppercase; }
+
+#primary h3 {
+  margin: 0 0 4%;
+  padding-top: 0em; }
+
+.contact-info {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 0.9em;
+  font-weight: bold; }
+
+.contact-info a {
+  display: block;
+  min-height: 20px;
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+  padding: 0 0 0 30px;
+  margin: 0 0 10px; }
+
+.contact-info li.phone a {
+  background-image: url("../img/phone.png"); }
+
+.contact-info li.mail a {
+  background-image: url("../img/mail.png"); }
+
+/********************
+COLORS
+********************/
+/* site body */
+body {
+  background-color: #fff;
+  color: #444;
+}
+
+/* header */
+header {
+  background: #fff;
+  border-color: #eee; }
+
+/* nav bkgd on mobile devices */
+nav, footer {
+  background: #eee; }
+
+#copyright {
+  background: inherit;
+  color: #444;
+}
+
+/* logo text */
+h1 {
+  color: #000; }
+
+/* links */
+a, a:visited {
+  color: #777; }
+
+a:hover, a:focus {
+  color: #000; }
+
+.inactive:hover, 
+.inactive:focus {
+  color: #777;
+}
+
+#gallery li,
+#subgallery li,
+#videos li {
+  background-color: #ddd; }
+
+nav a, nav a:visited {
+  color: #888; }
+
+nav a.selected, nav a:hover, nav a:focus {
+  color: #000; }
+
+
+@media screen and (min-width: 523px) {
+
+  #about {
+    margin-top: 20px;
+  }
+
+  .contact,
+  #topmargin {
+    margin-top: 40px;
+  }
+
+  #gallery {
+    margin-top: 30px;
+  }
+
+}
+
+@media screen and (min-width: 635px) {
+  
+  h1 {
+    width: 80%;
+  }
+
+  /********************
+  TWO COLUMN LAYOUT - CONTACT PAGE
+  ********************/
+
+  #wrapper {
+    padding-top: 0.5em; }
+
+  .primary {
+    width: 50%;
+    float: left; }
+
+  .primary h3 {
+    margin: 0 0 4%;
+    padding-top: 0; }
+
+  .secondary {
+    width: 40%;
+    float: right;
+  }
+
+  .contact {
+    margin-top: 135px;
+  }
+
+  /********************
+  PAGE: ABOUT
+  ********************/
+  #about {
+  margin-top: 120px;
+  }
+
+  .profile-photo {
+    float: left;
+    margin: 0 5% 15px 0; }
+
+  #wrapper h3 {
+    margin: 0 5% 15px 0;
+    padding-top: 4%; }
+
+  /********************
+  3 * 5 = 15 (this is margins)
+  100% - 15% = 85%
+  85 / 3 = 28.333333333333
+  ********************/
+  /********************
+  PAGE: PORTFOLIO
+  ********************/
+  
+  #gallery {
+    margin-top: 140px;
+  }
+
+  #topmargin {
+    margin-top: 120px;
+  }
+
+  #gallery li,
+  #subgallery li {
+    width: 28.3333%; }
+
+  #gallery li:nth-child(3n+4),
+  #subgallery li:nth-child(3n+4) {
+    clear: left; }
+}
+
+@media screen and (min-width: 770px) {
+  /********************
+  HEADER
+  ********************/
+  nav {
+    background: none;
+    float: right;
+    font-size: 1.125em;
+    margin-right: 5%;
+    text-align: right;
+    width: 45%; }
+
+  #logo {
+    float: left;
+    margin-left: 5%;
+    text-align: left;
+    width: 45%; }
+
+  h1 {
+    font-size: 1.5em;
+    border-bottom: none; }
+
+  h2 {
+    font-size: 0.825em;
+    margin-bottom: 20px; }
+
+  header {
+    background-color: #fff;
+    border-bottom: 2px solid #ccc; /*#3454e6*/
+    margin-bottom: 60px; }
+
+  /********************
+  PAGES: PORTFOLIO
+  ********************/
+  .body-title {
+    text-align: left; }
+
+  /********************
+  PAGE: ABOUT, CONTACT
+  ********************/
+  .profile-photo {
+    padding: 0; }
+
+  #wrapper h3 {
+    margin: 0 5% 15px 0;
+    padding: 0; }
+
+  .secondary {
+    padding-top: 0; } 
+
+  #about,
+  .contact {
+    margin-top: 140px;
+  }
+
+}
+
+@media screen and (min-width: 1150px) {
+  
+  nav {
+    width: 30%;
+  }
+
+  #logo {
+    width: 60%;
+  }
+
+  #gallery {
+    margin-top: 100px;
+  }
+
+  #about,
+  .contact {
+    margin-top: 120px;
+  }
+
+}
